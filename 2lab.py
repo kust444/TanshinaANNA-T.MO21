@@ -1,0 +1,19 @@
+photos = 120
+albums = 6
+def photos_per_album(photos, albums):
+    if albums==0:
+        return "на ноль делить нельзя"
+    else:
+        rez = photos/albums
+        return rez
+
+assert photos_per_album(120, 6) == 20
+assert photos_per_album(120, 0) == "на ноль делить нельзя"
+assert photos_per_album(90,3) == 30
+
+print(photos_per_album(photos, albums))
+
+
+words = ["фон", "камера", "фотография"]
+words_sort = sorted(words, key=lambda word: len(word))
+print(words_sort)
