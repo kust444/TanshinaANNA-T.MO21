@@ -1,12 +1,9 @@
 x = 32 #снаружи функции - внешняя переменная
-
 def show():
     x = 22 #ВНУТРИ ФУНКЦИИ - локальная переменная
     print(x)
-
 show()
 print(x)
-
 #вывод:
 # 22
 # 32
@@ -26,11 +23,9 @@ print(person(name='Соня',age = 18))
 
 def increase(x):
     return x + 2
-
 def apply(func, value):
     func(value)
     return func(value)
-
 print(apply(increase, 3))
 
 
